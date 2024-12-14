@@ -12,7 +12,7 @@ public class GameControl : MonoBehaviour
     public bool gameOver = false;
     public static GameControl instrance;
     public float scrollSpeed = -1.5f;
-    public Text scoreText;
+    public TMP_Text scoreText;
 
     private int score = 0;
 
@@ -42,7 +42,7 @@ public class GameControl : MonoBehaviour
             return;
         }
         score++;
-        scoreText.text 
+        scoreText.text = "score" + score.ToString();
     }
     public void BirdDied()
     {

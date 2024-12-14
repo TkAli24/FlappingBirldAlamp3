@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class Colums : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D othere)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameControl.instrance.BirdScored();
     }
 }
